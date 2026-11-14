@@ -26,7 +26,7 @@ It's an installable web app (PWA) with no build step and no runtime dependencies
 ## Run it locally
 
 ```bash
-git clone https://github.com/<you>/larder.git
+git clone https://github.com/willshorthouse1-bit/larder.git
 cd larder
 npm start          # serves on http://localhost:5173 (python3 -m http.server)
 npm test           # runs the unit tests with Node's built-in runner (Node 20+)
