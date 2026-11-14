@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Larder</title>
+    <meta name="description" content="Keep track of the food you have, use it before it goes off, and get recipe ideas from what's in your kitchen.">
+    <meta name="theme-color" content="#f2f4ee" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#16201a" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Larder">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <main id="main" tabindex="-1"></main>
+
+    <nav class="tabbar" aria-label="Main">
+      <a href="#/kitchen" data-route="kitchen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v4H7zM6 7h12a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1zM9 12h6"/></svg>
+        <span>Kitchen</span>
+      </a>
+      <a href="#/recipes" data-route="recipes">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16a8 8 0 0 1-16 0zM8 8c0-2 2-2 2-4M12 8c0-2 2-2 2-4M16 8c0-2 2-2 2-4"/></svg>
+        <span>Recipes</span>
+      </a>
+      <a href="#/settings" data-route="settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <dialog id="sheet" class="sheet"></dialog>
+    <div id="toast" class="toast" role="status" popover="manual" hidden></div>
+
+    <noscript>Larder needs JavaScript to run.</noscript>
+  </body>
+</html>

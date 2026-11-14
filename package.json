@@ -1,0 +1,15 @@
+{
+  "name": "larder",
+  "version": "1.0.0",
+  "description": "A kitchen inventory that reminds you to use food before it goes off and suggests recipes with AI.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
